@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-    int arr[5]={1,2,5,7,8};
+    int arr[5]={1,2,6,7,8};
 
     int *p1=arr;
 

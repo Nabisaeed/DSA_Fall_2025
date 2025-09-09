@@ -10,16 +10,16 @@ int * add (){
     return &c;
 }
 
-void test(){
+void test1(){
 
-    cout<<"This is test function"<<endl;
+    cout<<"This is test function : "<<endl;
 }
 
 int main() {
 
     int *p1=add();
 
-    test();
+    test1();
 
     cout<<*p1<<endl;
 

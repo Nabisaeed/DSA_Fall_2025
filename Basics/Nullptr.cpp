@@ -9,7 +9,7 @@ int main() {
 
     if(p1){
 
-        cout<<"The pointer is not null and it's value is :"<<*p1<<endl;
+        cout<<"The pointer is not null and it's value is:"<<*p1<<endl;
     }
 
     else{
