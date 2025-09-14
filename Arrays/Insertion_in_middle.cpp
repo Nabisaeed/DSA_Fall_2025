@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
 
-    int arr[100]={12,34,50,100},pos,num;
+    int arr[100]={12,33,50,100},pos,num;
     int n=4;
     
     cout<<"Enter the position at which you wanna insert an element "<<endl;

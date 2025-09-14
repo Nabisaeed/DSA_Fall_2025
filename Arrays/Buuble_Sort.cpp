@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-    int arr[100]= {100,34,50,12}, temp, n;
+    int arr[100]= {100,33,50,12}, temp, n;
 
     for(int i=0;i<n; i++){
 
