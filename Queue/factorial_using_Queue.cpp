@@ -32,19 +32,18 @@ public:
         data[++rear] = value;
     }
 
-    void Dequeue() {
+    int Dequeue() {
         if (IsEmpty()) {
             cout << "The Queue is empty" << endl;
-            return;
+            return -1;
         }
 
-        cout << "Dequeued: " << data[front] << endl;
-        front++;
+        return data[front++];
 
        
-        if (front > rear) {
-            front = rear = -1;
-        }
+        // if (front > rear) {
+        //     front = rear = -1;
+        // }
     }
 
     void Display() {
@@ -60,6 +59,32 @@ public:
         cout << endl;
     }
 
+    int fact(int n){
+
+        if(n<0){
+
+            return -1;
+        }
+
+
+        Queue q1;
+
+        for(int i=1; i<=n; i++){
+
+            q1.Enqueue(i);
+        }
+
+        int result=1;
+
+        while(!q1.IsEmpty()){
+
+            result=result*q1.Dequeue();
+        }
+
+        return result;
+    }
+
+
 };
 
 int main() {
@@ -70,12 +95,14 @@ int main() {
     q1.Enqueue(30);
     q1.Enqueue(40);
 
-    q1.Display();
+   cout<< q1.fact(5)<<endl;
 
-    q1.Dequeue();
-    q1.Dequeue();
+    // q1.Display();
 
-    q1.Display();
+    // q1.Dequeue();
+    // q1.Dequeue();
+
+    // q1.Display();
 
     return 0;
 }
